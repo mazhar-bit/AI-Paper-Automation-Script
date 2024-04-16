@@ -6,7 +6,7 @@ import allure
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 from allure_commons.types import AttachmentType
-
+from selenium.webdriver.common.action_chains import ActionChains
 from LoginPage import Login
 # from readProperties import ReadConfig
 
