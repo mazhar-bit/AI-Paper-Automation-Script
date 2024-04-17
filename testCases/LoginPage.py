@@ -1,12 +1,13 @@
 from selenium.webdriver.common.by import By
-
+from selenium import webdriver
 class Login:
     # textbox_username = '/html/body/div/div/div[2]/form/div[1]/div[1]/div/input',
     # text_password = '/html/body/div/div/div[2]/form/div[1]/div[2]/div/input',
     # btn_login = '/html/body/div/div/div[2]/form/button',
 
     def __init__(self, driver):
-        self.driver = driver
+       
+        self.driver = driver 
         self.textbox_username = '/html/body/div/div/div[2]/form/div[1]/div[1]/div/input',
         self.text_password = '/html/body/div/div/div[2]/form/div[1]/div[2]/div/input',
         self.btn_login = '/html/body/div/div/div[2]/form/button',

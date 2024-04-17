@@ -6,19 +6,22 @@ import allure
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 from allure_commons.types import AttachmentType
-from selenium.webdriver.common.action_chains import ActionChains
+
 from LoginPage import Login
 # from readProperties import ReadConfig
+# import sys
+# sys.path.append('./utilities')
+
+from config import driver
 
 
-
-@pytest.fixture()
-def driver():
-    driver = webdriver.Edge()
-    driver.implicitly_wait(10)
-    driver.maximize_window()
-    yield driver
-    driver.quit()
+# @pytest.fixture()
+# def driver():
+#     driver = webdriver.Edge()
+#     driver.implicitly_wait(10)
+#     driver.maximize_window()
+#     yield driver
+#     driver.quit()
 
 
 class Test_001_Login:
