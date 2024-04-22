@@ -4,7 +4,7 @@ import sys
 sys.path.append('./utilities')
 from SettingPage import setting
 from test_login import Test_001_Login
-
+import time
 from config import driver
 
 
@@ -27,6 +27,9 @@ class Test_002_Setting:
         setpage = setting(driver) 
         # setpage.open_page('http://aigrader.kpitb.online/')  # Fix the URL format
         setpage.sethover_setting()
+      #   setpage.implicitly_wait(10)
+        time.sleep(10)
+        setpage.sethover_discipline()
         
         # setpage.clickLogin()
         

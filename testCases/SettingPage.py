@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
-
+import time
 class setting:
 
     def __init__(self,driver):
@@ -21,6 +21,13 @@ class setting:
         element_to_hover_over = self.driver.find_element(By.XPATH, *self.hover_setting)
         hover = ActionChains(self.driver).move_to_element(element_to_hover_over)
         hover.perform()
+        
+    def sethover_discipline(self):
+        disciplainehover = self.driver.find_element(By.XPATH,self.hover_discipline)
+        hover = ActionChains(self.driver).move_to_element(disciplainehover)
+        hover.perform()
+        time.sleep(2)
+        hover.click()    
 
 
 
