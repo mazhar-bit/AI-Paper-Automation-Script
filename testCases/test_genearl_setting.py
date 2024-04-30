@@ -28,9 +28,10 @@ class Test_002_Setting:
         # setpage.open_page('http://aigrader.kpitb.online/')  # Fix the URL format
         setpage.sethover_setting()
       #   setpage.implicitly_wait(10)
-        time.sleep(10)
+        time.sleep(5)
         setpage.sethover_discipline()
-        
+        time.sleep(5)
+        setpage.hover_term()
         # setpage.clickLogin()
         
         # time.sleep(15)
