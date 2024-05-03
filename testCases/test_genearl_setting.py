@@ -18,7 +18,7 @@ from config import driver
     
 class Test_002_Setting:
     
-   def test_login(self, driver):
+   def test_genearl(self, driver):
         # Instantiate Test_001_Login class
         test_login_instance = Test_001_Login()
 
