@@ -36,6 +36,8 @@ class Test_001_Login:
         login_page.setpassword('admin@admin.com')
         login_page.clickLogin()
         time.sleep(15)
+        driver.implicitly_wait(10)
+        # assert True
         title = driver.title
         if title == 'Dashboard | QPG':
             print('Login Test Passed')
