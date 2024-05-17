@@ -14,6 +14,7 @@ class Login:
 
     def open_page(self,url):    
         self.driver.get(url)
+        
 
     def setUsername(self,username):
         self.driver.find_element(By.XPATH,*self.textbox_username).send_keys(username)
