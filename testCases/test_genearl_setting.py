@@ -1,6 +1,7 @@
 import pytest 
 from selenium import webdriver
 import sys
+
 sys.path.append('./utilities')
 from SettingPage import setting
 from test_login import Test_001_Login
@@ -27,7 +28,7 @@ class Test_002_Setting:
         setpage = setting(driver) 
         # setpage.open_page('http://aigrader.kpitb.online/')  # Fix the URL format
         setpage.sethover_setting()
-      #   setpage.implicitly_wait(10)
+           #   setpage.implicitly_wait(10)
         time.sleep(5)
         setpage.sethover_discipline()
         time.sleep(5)
@@ -44,3 +45,5 @@ class Test_002_Setting:
         #     assert False, f"Expected title: 'Dashboard | QPG', Actual title: {title}"
         
     
+    
+   
